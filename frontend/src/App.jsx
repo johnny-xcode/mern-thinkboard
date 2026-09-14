@@ -7,10 +7,8 @@ import {Toaster, toast} from 'react-hot-toast'
 
 function App() {
   return (
-    <div className="min-h-screen bg-base-200">
-      {/* <button onClick={() => toast.error("congrats!")} className="text-red-500 p-4 bg-pink-500 hover:bg-pink-600">Click Me</button> */}
-      <button className="btn btn-primary" onClick={() => toast.success("congrats!")}>Click Me</button>
-      <button className="btn btn-secondary">Click Me</button>
+<div className="relative h-full w-full">
+      <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_60%,#00FF9D40_100%)]" />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/create" element={<CreatePage />} />
